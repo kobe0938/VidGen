@@ -15,6 +15,7 @@ with h5py.File('hdf5_dm_july2021_expert_1.hdf5', 'r') as f:
             frame_image = np.array(f[image_key])
             plt.imshow(frame_image)
             plt.title(f'Frame {i} Image')
+            plt.show()
         else:
             print(f"Image key {image_key} not found in file.")
 
